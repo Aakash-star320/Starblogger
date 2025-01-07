@@ -39,7 +39,7 @@ app.use(
     store:redisStore,
     resave: false, // required: force lightweight session keep alive (touch)
     saveUninitialized: false, // recommended: only save session when data exists
-    secret: "Bread and Butter",
+    secret: process.env.SESSION_SECRET || "Bread and Butter",
     cookie:{
       maxAge:3600000,
     }
