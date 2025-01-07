@@ -29,17 +29,17 @@ let redisStore = new RedisStore({
 
 
 const app=express();
-const port=3000;
+const port=4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 app.use(
   session({
-   // store:redisStore,
+    store:redisStore,
     resave: false, // required: force lightweight session keep alive (touch)
     saveUninitialized: false, // recommended: only save session when data exists
-    secret: "Tom and Jerry",
+    secret: "Bread and Butter",
     cookie:{
       maxAge:3600000,
     }
