@@ -13,8 +13,8 @@ const __dirname=dirname(fileURLToPath(import.meta.url));
 
 let redisClient = createClient({
   socket: {
-    host: 'host.docker.internal', // Change this if Redis is on a different host
-    port: 2800,        // Replace with the correct port if Redis is on a different port
+    host: red-ctutmm9u0jms73aq01l0, // Change this if Redis is on a different host
+    port: 6379,        // Replace with the correct port if Redis is on a different port
     timeout:10000,
   },});
 redisClient.connect().catch(console.error);
