@@ -15,7 +15,7 @@ let redisClient = createClient({
   socket: {
   // host: process.env.REDIS_HOST, // Change this if Redis is on a different host
    //port: process.env.REDIS_PORT,    
-   url:`redis://${process.env.REDIS_HOST}:${process.env.REDIS_PORT}`;
+   url:`redis://${process.env.REDIS_HOST}:${process.env.REDIS_PORT}`,
    timeout:10000,
   },});
 redisClient.connect().catch(console.error);
