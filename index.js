@@ -13,10 +13,9 @@ const __dirname=dirname(fileURLToPath(import.meta.url));
 const url="redis://red-ctutmm9u0jms73aq01l0:6379";
 let redisClient = createClient({
   socket: {
-  //  host: process.env.REDIS_HOST, // Change this if Redis is on a different host
-   // port: process.env.REDIS_PORT,    
-    url,
-    timeout:10000,
+   host: process.env.REDIS_HOST, // Change this if Redis is on a different host
+   port: process.env.REDIS_PORT,    
+   timeout:10000,
   },});
 redisClient.connect().catch(console.error);
 
