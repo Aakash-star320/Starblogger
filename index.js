@@ -29,7 +29,7 @@ let redisStore = new RedisStore({
 
 
 const app=express();
-const port=4000;
+const port=process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
