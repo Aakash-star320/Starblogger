@@ -35,7 +35,7 @@
     <div class="input-group input-group-sm mb-3">
        <% var tagsHolder=""; %>
        <% for(var k=0;k<data.tags.length;k++){tagsHolder=tagsHolder.concat("#").concat(data.tags[k]).concat("       ")}; %>
-        <input type="text" class="form-control default" value="<%= tagsHolder %>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Add upto 4 tags" id="bigger" name="tags">
+        <input type="text" class="form-control default" value="<%= tagsHolder %>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Tags" id="bigger" name="tags">
       </div><br>
       <textarea placeholder="content" class="form-control default" aria-label="With textarea" id="content"  name="content">"<%=data.content%>"</textarea><br>
       <input name="index" class="indexStorer" value="<%=data.index%>" type="text" readonly></input>
