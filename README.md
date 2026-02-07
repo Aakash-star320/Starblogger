@@ -84,6 +84,3 @@ let redisClient = createClient({
 - **Data Persistence**: Currently, blog posts are stored in an in-memory array (`posts` variable in `index.js`). **Restarting the server will result in the loss of all created posts.**
 - **Sessions**: Session data is stored in Redis.
 
-## License
-
-ISC
